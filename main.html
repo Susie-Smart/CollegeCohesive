@@ -16,17 +16,27 @@
     Global site tag (gtag.js) - Google Analytics -->
 
 
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">   <link href="style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    
+    
+    <link href="style.css" rel="stylesheet">
     <link href="reset.css" rel="stylesheet">
+    
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/1883b12f2c.js" crossorigin="anonymous"></script>
     
+<!--
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script> 
         $(function(){
           $("#nav").load("topNav.html"); 
         });
     </script>
+-->
     
     
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes">
@@ -41,15 +51,14 @@
 
     <div class="hero-image"> </div>
 
-    <div id="nav"></div>
-    <br>
-    <br>
+<!--    <div id="nav"></div>-->
+
     
     <div id="mission">
         <a class="anchor" id="about"></a>
         <h2>Our Mission</h2>
         <hr />
-        <p>Every student is unique and so is our approach. At college cohesive, we consider the individual needs of our clients as we guide them through the college application process and beyond.</p>
+        <h3>Every student is unique and so is our approach. At college cohesive, we consider the individual needs of our clients as we guide them through the college application process and beyond.</h3>
     
         
     </div>
@@ -83,11 +92,87 @@
         </div>
         
 
+        
+        <div id="Acceptances">
+            
+            <h2 style="text-align: center">Our Acceptances</h2>
+            
+            <hr/>
+            
+            <div class="row">
+            
+        <div class="TwoColumn">
+            <div class=aligned style="margin-left: 25%">
+            <img src="img/icons8-usa-48.png" alt="USA Flag" style="width:20%; display: inline-block;">
+            <h3 id="flag" style=" display: inline-block;">USA Acceptances</h3>
+            </div>
+            <ul class="list" style="text-align: center;">
+                <li class="list-item harvard">Harvard</li>
+                <li class="list-item yale">Yale</li>
+                <li class="list-item princeton">Princeton</li>
+                <li class="list-item brown">Brown</li>
+                <li class="list-item columbia">Columbia</li>
+                <li class="list-item Cornell">Cornell</li>
+                <li class="list-item Upenn">Upenn</li>
+                <li class="list-item Dartmouth">Dartmouth</li>
+                <li class="list-item harvard">Stanford</li>
+                <li class="list-item yale">Williams</li>
+                <li class="list-item princeton">UCLA</li>
+                <li class="list-item brown">UC Berkeley</li>
+                <li class="list-item columbia">NYU</li>
+                <li class="list-item Cornell">UVA</li>
+                <li class="list-item Upenn">Boston University</li>
+                <li class="list-item Dartmouth">Boston College</li>
+                <li class="list-item Dartmouth">UChigago</li>
+                <li class="list-item harvard">Emory</li>
+                <li class="list-item yale">Tufts</li>
+                <li class="list-item princeton">Duke</li>
+                <li class="list-item brown">Babson</li>
+                <li class="list-item columbia">Wellesley</li>
+                <li class="list-item Cornell">Northeastern</li>
+                <li class="list-item Upenn"> Northwestern</li>
+                <li class="list-item Dartmouth"> Carnegie Mellon</li>
+                <li class="list-item columbia">Johns Hopkins</li>
+                <li class="list-item Cornell">Claremont Mckenna</li>
+                <li class="list-item Upenn"> Swarthmore</li>
+                <li class="list-item Dartmouth"> Barnard</li>
+            </ul>
+        </div>
+                
+        <div class="TwoColumn">
+            
+            <div class=aligned style="margin-left: 25%">
+            <img src="img/icons8-great-britain-48.png" alt="USA Flag" style="width:20%; display: inline-block;">
+            <h3 id="flag" style="text-align: center; display: inline-block;">UK Acceptances</h3>
+            </div>
+            <ul class="list" style="text-align: center;">
+                <li class="list-item harvard">Oxford</li>
+                <li class="list-item yale">Cambridge</li>
+                <li class="list-item princeton">Durham</li>
+                <li class="list-item brown">ST. Andrews</li>
+                <li class="list-item columbia">UCL</li>
+                <li class="list-item Cornell">KCL</li>
+                <li class="list-item Upenn">LSE</li>
+                <li class="list-item Dartmouth">Imperial</li>
+                <li class="list-item harvard">Lancaster</li>
+                <li class="list-item yale">Exeter</li>
+                <li class="list-item princeton">Essex</li>
+                <li class="list-item brown">Manchester</li>
+                <li class="list-item columbia">Warwick</li>
+                <li class="list-item Cornell">Bath</li>
+                <li class="list-item Upenn">Bristol</li>
+                <li class="list-item Dartmouth">SOAS</li>
+            </ul>
+        </div>
+                
+                
+        
+        </div>
             
             
             <div>
         <a class="anchor" id="about"></a>
-                        <img src="img/collegecohesive2.png" style = "width:100%">        
+                        <img src="img/aboutBanner.png" style = "width:100%">        
 
         <h2 style=text-align:center; font-size:>Who are we?</h2>
         
@@ -134,21 +219,8 @@ For fun, Amrita likes to play and watch tennis, travel (biased towards the beach
         
         
     </div>
+    </div>
     </body>
     
-    <script>
     
-    window.onscroll = function() {stickyHeader()};
-
-        var header = document.getElementById("nav");
-        var sticky = header.offsetTop;
-
-        function stickyHeader() {
-          if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-          } else {
-            header.classList.remove("sticky");
-          }
-        }
     
-    </script>
